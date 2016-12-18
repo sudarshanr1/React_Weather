@@ -13,7 +13,8 @@ module.exports = {
         return response.data.main.temp;
       }
     }, function(response) {
-      throw new Error(response.response.data.message);
+      //throw new Error(response.response.data.message);
+      throw new Error("Place not found");
     });
   }
 }
